@@ -47,6 +47,7 @@
   },
   "scripts": {
     "start": "node hub/server.js",
+    "dev": "HUB_URL=http://127.0.0.1:8080 grunt devwatch",
     "test": "grunt test"
   }
 }

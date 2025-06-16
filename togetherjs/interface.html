@@ -49,6 +49,8 @@
         </span>
       </button>
       <button id="togetherjs-chat-button" class="togetherjs-button" title="{{ gettext('Chat') }}"></button>
+      <button id="togetherjs-history-button" class="togetherjs-button" title="{{ gettext('History') }}"></button>
+
       <div id="togetherjs-dock-participants"></div>
     </div>
   </div>
@@ -84,6 +86,23 @@
       <div class="togetherjs-only-mobile">
         <p>{{ gettext('Copy and paste this link over IM or email:') }}</p>
         <input type="text" class="togetherjs-share-link">
+        <!-- <a class="togetherjs-share-link" href="#">Press your thumb here.</a> -->
+      </div>
+    </section>
+  </div>
+
+    <!-- The window for history the link: -->
+  <div id="togetherjs-history" class="togetherjs-window"
+       data-bind-to="#togetherjs-history-button" style="display: none">
+    <header> {{ gettext('Editing History') }} </header>
+    <section>
+      <div class="togetherjs-not-mobile">
+        <div id="togetherjs-history-panel"></div>
+        <!-- <input type="text" class="togetherjs-history-link"> -->
+      </div>
+      <div class="togetherjs-only-mobile">
+        <p>{{ gettext('Hello, world') }}</p>
+        <input type="text" class="togetherjs-history-link">
         <!-- <a class="togetherjs-share-link" href="#">Press your thumb here.</a> -->
       </div>
     </section>
@@ -253,6 +272,9 @@
       <textarea id="togetherjs-chat-input" placeholder="{{ gettext('Type your message here') }}"></textarea>
     </section>
   </div>
+
+  <!-- The history screen: -->
+   
 
   <!-- this is a kind of warning popped up when you (successfully) start RTC: -->
   <div id="togetherjs-rtc-info" class="togetherjs-window"

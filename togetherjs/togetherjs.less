@@ -343,6 +343,7 @@ input.togetherjs-upload-avatar {
     }
   }
 
+
   #togetherjs-buttons #togetherjs-share-button.togetherjs-active {
     background-image: url('./images/button-share-active.png') !important;
     background-color: #0F81BF;
@@ -368,6 +369,20 @@ input.togetherjs-upload-avatar {
       background-image: url('./images/button-chat-active.png');
     }
   }
+
+  #togetherjs-buttons #togetherjs-history-button {
+    background-image: url('./images/button-history.png');  
+    &:hover {
+      background-image: url('./images/button-history-active.png');
+    }
+  }
+
+  #togetherjs-history-panel {
+  max-height: 300px;
+  overflow-y: auto;
+  background: #fff;
+  font-size: 14px;
+}
 
   #togetherjs-buttons #togetherjs-chat-button.togetherjs-active {
     background-image: url('./images/button-chat-active.png') !important;
